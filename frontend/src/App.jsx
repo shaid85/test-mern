@@ -21,7 +21,7 @@ function App() {
   if(jokes.length > 0){
     
   }else{
-    jokes = []
+    setJokes([])
   }
 
   return (
