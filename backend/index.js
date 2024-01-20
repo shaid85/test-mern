@@ -1,6 +1,15 @@
 import express from 'express';
+import cors from 'cors'
 
 const app = express()
+
+app.use(cors(
+    {
+        origin: ["https://test-mern-client.vercel.app"],
+        methods: ["POST","GET"],
+        credentials: true,
+    }
+))
 
 app.get('/', (req, res) => {
     res.send('Server is ready')
