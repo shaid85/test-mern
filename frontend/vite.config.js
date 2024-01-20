@@ -9,7 +9,7 @@ export default defineConfig({
         target: 'https://test-mern-api-theta.vercel.app',
         // target: 'http://localhost:3000',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        // rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }  
   },
