@@ -5,9 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     proxy: {
-      '/api': 'https://test-mern-api-theta.vercel.app'
-      // '/api': 'http://localhost:3000'
-    }
+      '/api': {
+        target: 'https://test-mern-api-theta.vercel.app',
+        // target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,      
+        ws: true,
+      }
+    }  
   },
   plugins: [react()],
 })
