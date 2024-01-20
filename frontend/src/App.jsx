@@ -11,7 +11,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('/api/jokes')
+    axios.get('https://test-mern-api-theta.vercel.app/api/jokes')
           .then((response) => {
             setJokes(response.data)
           })
