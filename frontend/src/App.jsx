@@ -18,11 +18,6 @@ function App() {
           })
   }, [])
 
-  if(jokes.length > 0){
-    
-  }else{
-    setJokes([])
-  }
 
   return (
     <>
