@@ -23,12 +23,7 @@ function App() {
     <>
       <h1>React Frontend</h1>
       <h2>Jokes: {jokes.length}</h2>
-      {jokes.map((item) => (
-        <div className="joke" key={item.id}>
-          <h2>{item.title}</h2>
-          <p>{item.content}</p>
-        </div>
-      ))}
+
     </>
   )
 }
