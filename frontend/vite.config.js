@@ -7,7 +7,6 @@ export default defineConfig({
     proxy: {
       '/api': 'https://test-mern-api-theta.vercel.app'
       }
-    }  
   },
   plugins: [react()],
 })
