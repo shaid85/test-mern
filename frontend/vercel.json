@@ -1,5 +1,9 @@
 {
     "rewrites": [
+      { 
+        "source": "/api", 
+        "destination": "https://test-mern-api-theta.vercel.app" 
+      },
       {
         "source": "/(.*)",
         "destination": "/index.html"
